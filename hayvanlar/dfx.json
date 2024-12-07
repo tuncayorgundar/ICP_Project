@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "hayvanlar_backend": {
+      "main": "src/hayvanlar_backend/main.mo",
+      "type": "motoko"
+    },
+    "hayvanlar_frontend": {
+      "dependencies": [
+        "hayvanlar_backend"
+      ],
+      "source": [
+        "src/hayvanlar_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

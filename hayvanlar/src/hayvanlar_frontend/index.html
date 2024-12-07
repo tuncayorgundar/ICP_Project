@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayvan Barınağı Bağış Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hayvan Barınağı Bağış Sistemi</h1>
+
+        <!-- Bağış Yapma Formu -->
+        <div id="donationForm">
+            <h2>Bağış Yap</h2>
+            <label for="donorName">Adınız:</label>
+            <input type="text" id="donorName" placeholder="Adınızı girin">
+            <label for="donationAmount">Bağış Tutarı:</label>
+            <input type="number" id="donationAmount" placeholder="Bağış tutarını girin">
+            <button onclick="makeDonation()">Bağış Yap</button>
+        </div>
+
+        <!-- Toplam Bağış -->
+        <div id="totalDonation">
+            <h2>Toplam Bağış Tutarı</h2>
+            <p id="totalDonationAmount">Yükleniyor...</p>
+        </div>
+
+        <!-- Bağışçı Listesi -->
+        <div id="donorsList">
+            <h2>Bağışçılar</h2>
+            <ul id="donorList">
+                <!-- Bağışçılar burada listelenecek -->
+            </ul>
+        </div>
+
+        <!-- Bağış Geçmişi -->
+        <div id="donationHistory">
+            <h2>Bağış Geçmişi</h2>
+            <ul id="historyList">
+                <!-- Bağış geçmişi burada listelenecek -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
